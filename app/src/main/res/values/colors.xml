@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a61b12</color>
+    <color name="colorPrimaryDark">#700903</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryGreen">#3ccf10</color>
+    <color name="colorPrimaryDarkGreen">#196303</color>
+    <color name="colorPrimaryBlue">#1033cf</color>
+    <color name="colorPrimaryDarkBlue">#041148</color>
+    <color name="colorPrimaryGray">#767676</color>
+    <color name="colorPrimaryDarkGray">#3d3d3d</color>
+    <color name="round_button_stroke">#9b2f20</color>
+    <color name="round_button_solid">#ca4a39</color>
+</resources>

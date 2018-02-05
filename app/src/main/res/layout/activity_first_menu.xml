@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameboard"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/cardAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/four_red"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginBottom="42dp"
+            android:layout_above="@+id/playGame"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/playGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back"
+            android:layout_alignStart="@+id/back"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/button_red"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/button_red"
+            android:text="@string/back"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="374dp" />
+
+        <Button
+            android:id="@+id/arrowLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_left_red_transparency"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_alignTop="@+id/cardAmount"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/arrowRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_right_red"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="268dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_alignBaseline="@+id/arrowLeft"
+            android:layout_alignBottom="@+id/arrowLeft"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

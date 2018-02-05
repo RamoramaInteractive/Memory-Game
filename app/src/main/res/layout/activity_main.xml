@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameboard"
+    tools:context="com.example.fdai3744.memorygame3.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="373dp"
+        android:layout_height="512dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="-5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints,RtlHardcoded">
+
+        <Button
+            android:id="@+id/toPlayMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/toSettingsMenu"
+            android:layout_alignLeft="@+id/toSettingsMenu"
+
+            android:layout_alignStart="@+id/toSettingsMenu"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_red"
+            android:elevation="0dp"
+            android:text="@string/play"
+            android:textColor="@android:color/white"
+            tools:ignore="ObsoleteLayoutParam"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="145dp" />
+
+        <Button
+            android:id="@+id/toSettingsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:layout_gravity="center"
+            android:background="@drawable/button_red"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/toSettingsMenu"
+            android:layout_alignStart="@+id/toSettingsMenu"
+            android:layout_below="@+id/toSettingsMenu"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/button_red"
+            android:text="@string/quit"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/memory_logo"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
