@@ -1,40 +1,33 @@
 package com.example.fdai3744.memorygame3;
 
-import android.app.Activity;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import android.os.Handler;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.logging.LogRecord;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class GameActivity extends AppCompatActivity {
 
     private int MARGIN = 4;
     private int ROWS;
-    private int COLUMS;
+    private int COLUMNS;
     private LinearLayout mainlayout;
     private TextView pairs;
-    private String PAIRS = "Paare: ";
+    private String PAIRS = "Pairs: ";
     private List<LinearLayout> layout_rows;
     private List<MemoryCard> cards;
 
@@ -74,7 +67,7 @@ public class GameActivity extends AppCompatActivity {
         });
 
         ROWS = getIntent().getIntExtra("ROWS", 0);
-        COLUMS = getIntent().getIntExtra("COLUMS", 0);
+        COLUMNS = getIntent().getIntExtra("COLUMS", 0);
         cardback = getIntent().getIntExtra("BACKSIDE", R.drawable.backside_red);
 
         images = new ArrayList<Object>();
@@ -96,9 +89,9 @@ public class GameActivity extends AppCompatActivity {
         pairs.setText(PAIRS + "0");
         layout_rows = new ArrayList<LinearLayout>();
         cards = new ArrayList<MemoryCard>();
-        createCards(cards, images, MARGIN, ROWS, COLUMS, cardback);
+        createCards(cards, images, MARGIN, ROWS, COLUMNS, cardback);
         createLayoutRows(layout_rows, ROWS);
-        addCardsToLayout(cards, layout_rows, ROWS, COLUMS, mainlayout);
+        addCardsToLayout(cards, layout_rows, ROWS, COLUMNS, mainlayout);
 
         runnable = new Runnable() {
             @Override
@@ -118,7 +111,7 @@ public class GameActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-                    if (MemoryCard.getcPairs() == (ROWS * COLUMS / 2)) {
+                    if (MemoryCard.getcPairs() == (ROWS * COLUMNS / 2)) {
 
                         pairs.post(new Runnable() {
                             @Override
@@ -133,7 +126,7 @@ public class GameActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
 
-                       // restartGame();
+                        // restartGame();
                         winGame();
                     }
                 }

@@ -11,7 +11,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.sip.SipAudioCall;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -144,7 +144,7 @@ public class MemoryCard implements View.OnClickListener {
     public void onClick(View v) {
         if (!this.clicked && this.clickedCards.size() < 2) {
             flipCardtoFront();
-            this.clickedCards.add(this);
+            clickedCards.add(this);
 
             if (this.clickedCards.size() == 2) {
                 Handler handler = new Handler();

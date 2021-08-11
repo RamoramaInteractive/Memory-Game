@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Ramulf Memory</string>
-    <string name="play">Spielen</string>
-    <string name="settings">Einstellung</string>
-    <string name="quit">Beenden</string>
+    <string name="app_name">Dogs Memory</string>
+    <string name="play">Play</string>
+    <string name="settings">Options</string>
+    <string name="quit">Quit</string>
     <string name="ok">Ok</string>
-    <string name="back">Zurück</string>
-    <string name="playAgain">Nochmal spielen</string>
-    <string name="backToMenu">Zurück zum Menü</string>
+    <string name="back">Back</string>
+    <string name="playAgain">Play again</string>
+    <string name="backToMenu">Back to Menu</string>
     <string name="x">x</string>
-    <string name="camerabutton">Kamera</string>
+    <string name="camerabutton">Camera</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>
-    <string name="photo">Foto</string>
+    <string name="photo">Photo</string>
 </resources>
