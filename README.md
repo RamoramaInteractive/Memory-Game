@@ -1,4 +1,4 @@
-# Memory Game
+# Dogs Memory Game
 
 ## Table of Contents  
 - [Introduction](#introduction) 
