@@ -3,6 +3,7 @@
 ## Table of Contents  
 - [Introduction](#introduction) 
 - [Features](#features)
+- [Usage](#usage)
 - [Updates](#updates)
 - [Future](#future)
 - [Notes](#notes)
@@ -16,6 +17,9 @@ For the Bachelor's course Android programming of the study program Digital Media
 * The player can choose the number of face down memory cards.
 * The color of the cover sheet can be chosen by yourself in red, blue, green and yellow.
 * The player can use either the camera or the photo gallery to customize their own cover sheet **(No longer possible due to upgrade)**.
+
+## Usage
+Connect your Android device (min. API 21, max. API 29) to your computer and install the *MemoryGame.apk* file.
 
 ## Updates
 It has been upgraded with *Android Studio Arctic Fox 3.1.*, *Gradle 7.0.0* and *Java 11* for Android APIs 21 (Android 5.0) to API 29 (Android 8.0) since Aug 11, 2021.
