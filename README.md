@@ -9,8 +9,7 @@
 ## Introduction
 For the Bachelor's course Android programming of the study program Digital Media at [Fulda University of Applied Sciences](https://www.hs-fulda.de/en/home) in summer semester 2017, we were asked to develop our own app. I developed memory card game with dogs, where you can choose the number of memory cards by yourself. This game is my first Android app that I have developed. The memory game was originally developed using Android Studio 2.3 with Gradle 3.1.3. Java 8 for Android APIs 21 (Android 5.0) to API 25 (Android 7.0).
 
-<img alt="Memory Menu" src="https://github.com/RamoramaInteractive/Memory-Game/blob/master/screenshot001.jpg" width="50%" height="50%">
-<img alt="Memory Game" src="https://github.com/RamoramaInteractive/Memory-Game/blob/master/screenshot002.jpg" width="50%" height="50%">
+<img alt="Memory Menu" src="https://github.com/RamoramaInteractive/Memory-Game/blob/master/screenshot001.jpg" width="25%" height="25%"> <img alt="Memory Game" src="https://github.com/RamoramaInteractive/Memory-Game/blob/master/screenshot002.jpg" width="25%" height="25%">
 
 ## Updates
 It has been upgraded with *Android Studio Arctic Fox 3.1.*, *Gradle 7.0.0* and *Java 11* for Android APIs 21 (Android 5.0) to API 29 (Android 8.0) since Aug 11, 2021.
